@@ -1,0 +1,6 @@
+{
+  "name": "ILLUMATRIX",
+  "description": "AI-assisted content preparation workspace for high-retention video scripts, scene-by-scene Google Flow prompts, narration, continuity bibles, and thumbnail image prompts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

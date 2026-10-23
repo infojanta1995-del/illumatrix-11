@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ILLUMATRIX — AI Content Preparation Workspace</title>
+    <meta name="description" content="AI-assisted content preparation workspace for high-retention video scripts, scene-by-scene Google Flow prompts, narration, continuity bibles, and thumbnail image prompts." />
+    <meta property="og:title" content="ILLUMATRIX — AI Content Preparation Workspace" />
+    <meta property="og:description" content="AI-assisted content preparation workspace for high-retention video scripts, scene-by-scene Google Flow prompts, narration, continuity bibles, and thumbnail image prompts." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script>
+      // Compatibility shim for browser extensions trying to intercept fetch on window
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return originalFetch;
+            },
+            set: function(fn) {
+              originalFetch = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // Property already configured or restricted
+        }
+
+        // Suppress unhandled extension errors originating from chrome-extension://
+        window.addEventListener('error', function(event) {
+          if (event.filename && event.filename.indexOf('chrome-extension://') !== -1) {
+            event.stopImmediatePropagation();
+            event.preventDefault();
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
